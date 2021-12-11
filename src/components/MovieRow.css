@@ -1,18 +1,18 @@
-.movieRow{
-    margin-bottom:  30px;
+.movieRow {
+    margin-bottom: 30px;
 }
 
 .movieRow h2 {
     margin: 0px 0px 0px 30px;
 }
 
-.movieRow--listarea{
+.movieRow--listarea {
     overflow-x: hidden;
     padding-left: 30px;
 }
 
-.movie-row--list{
-  width: 999999999px;
+.movie-row--list {
+    transition: all ease 0.6s;
 }
 
 .movieRow--item {
@@ -24,12 +24,48 @@
 .movieRow--item img {
     width: 100%;
     /* o elemento transform: scale(0.9); serve para separar os cards, sem precisar usar o padding, para justamente acontecer o efeito do maouse me ciuma do card */
-    transform: scale(0.9); 
+    transform: scale(0.9);
     /* Para o efeito demora ou ficar mais rapido */
     transition: all ease 0.2s;
 }
 
-.movieRow--item img:hover{
+.movieRow--item img:hover {
     /* A grande magina */
     transform: scale(1);
+}
+
+.movieRow--left,
+.movieRow--right {
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.8s;
+}
+
+.movieRow--left {
+    left: 0;
+}
+
+.movieRow--right {
+    right: 0;
+}
+
+.movieRow:hover .movieRow--left,
+.movieRow:hover .movieRow--right {
+    opacity: 1;
+}
+
+@media (max-width: 760px) {
+    .movieRow--left,
+    .movieRow--right{
+        opacity: 1;
+    }
 }
