@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Tmdb from './Tmdb';
-import MovieRow from './components/MovieRow';
-import FeatureMovie from './components/FeaturedMovie';
-import Header from './components/Header';
-import Loading from './img/Netflix_LoadTime.gif';
+import MovieRow from './components/MovieRow/MovieRow';
+import FeatureMovie from './components/FeaturedMovie/FeaturedMovie';
+import Header from './components/Header/Header';
+import Loading from './components/img/Netflix_LoadTime.gif';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -62,12 +63,10 @@ function App() {
         ))}
       </section>
 
-      <footer>
-        Feito com <span role='img' aria-label="coração" >💙</span> por <a href="https://www.linkedin.com/in/ytalo-cruz/"> Ytalo Cruz</a> nas aulas da B7web! <br />
-        Direitos de imagem para Netflix.<br />
-        Dados pegos do site Themoviedb.org
-      </footer>
+      <Footer />
+        
 
+      {/* Imagem do carregando antes de incicar os cards de filmes */}
       {movieList.length <= 0 &&
         <div className="loading">
           <img src={Loading} alt="Carregando" />

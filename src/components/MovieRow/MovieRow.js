@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../components/MovieRow.css';
+import '../MovieRow/MovieRow.css'
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
