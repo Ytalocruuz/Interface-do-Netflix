@@ -1,0 +1,35 @@
+.movieRow{
+    margin-bottom:  30px;
+}
+
+.movieRow h2 {
+    margin: 0px 0px 0px 30px;
+}
+
+.movieRow--listarea{
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+
+.movie-row--list{
+  width: 999999999px;
+}
+
+.movieRow--item {
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+
+.movieRow--item img {
+    width: 100%;
+    /* o elemento transform: scale(0.9); serve para separar os cards, sem precisar usar o padding, para justamente acontecer o efeito do maouse me ciuma do card */
+    transform: scale(0.9); 
+    /* Para o efeito demora ou ficar mais rapido */
+    transition: all ease 0.2s;
+}
+
+.movieRow--item img:hover{
+    /* A grande magina */
+    transform: scale(1);
+}
