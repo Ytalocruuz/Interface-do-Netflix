@@ -14,6 +14,10 @@
 
 https://starlit-duckanoo-5ef9c3.netlify.app/
 
+## Print netflix
+
+![Netflex](https://user-images.githubusercontent.com/72119120/169198332-76aaf22a-c418-4196-b808-8e5dbd8331e6.PNG)
+
 
 
 
