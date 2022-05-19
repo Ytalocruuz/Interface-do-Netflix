@@ -11,9 +11,5 @@
 4º Manipulação de API's, utilizando a API do site "themoviedb.org".
 
 
-## Para rodar e clonar o projeto:
-npm install
-npm install @material-ui/core
-npm install @material-ui/icons
-npm i @emotion/react @emotion/styled
+
 
